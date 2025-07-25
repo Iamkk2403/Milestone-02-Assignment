@@ -79,6 +79,15 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
+.product-bottom div {
+  text-align: center;
+}
+.product-bottom button {
+  width: 100%;
+}
+.product-bottom p {
+  font-weight: bold;
+}
 
 .btncolor {
   background-color: #e95a08;
@@ -86,7 +95,6 @@
   text-align: center;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -97,18 +105,114 @@
 .flowerdetails {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
   margin: 40px auto;
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.trusted-seal {
+  position: absolute;
+  top: 00;
+  right: 0;
+  width: 200px;
+  height: auto;
+  transform: translate(20%, -20%);
+  z-index: 10;
+}
+
+.flowerdetails {
+}
+.deal-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
 .flowerheader,
 .latestdeals {
   font-size: 50px;
   font-weight: bold;
 }
+
 .flowerlower {
   font-size: 22px;
   color: #7c7c7c;
 }
+
+.deal-section h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.dealheadline p {
+  font-size: 22px;
+  text-align: center;
+  color: #7c7c7c;
+  padding: 10px 50px;
+}
+.deal-section h2 span {
+  color: #e95a08;
+}
+
+.deal-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.deal-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.deal-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.deal-card .text {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  color: white;
+}
+
+.deal-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.deal-card button {
+  padding: 6px 12px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.large {
+  flex: 2;
+}
+
+.small {
+  flex: 1;
+}
+
 .latestdeals p {
   font-size: 22px;
 }
@@ -117,6 +221,9 @@
 }
 .joinsection {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   align-items: center;
   gap: 20px;
@@ -124,6 +231,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
+}
+
+.joinsection input {
+  padding: 10px 100px;
+}
+
+.joinsection h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
 }
 .footersection {
   display: flex;
