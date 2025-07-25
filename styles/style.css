@@ -49,6 +49,10 @@
   max-width: 570px;
   width: 100%;
 }
+.banner-right img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .banner h2 {
   font-size: 50px;
@@ -108,22 +112,20 @@
   gap: 40px;
   margin: 40px auto;
 }
-.image-container {
+
+.flower-container {
   position: relative;
-  display: inline-block;
 }
 .trusted-seal {
   position: absolute;
-  top: 00;
-  right: 0;
   width: 200px;
-  height: auto;
-  transform: translate(20%, -20%);
   z-index: 10;
+  transform: translate(20%, -20%);
+  height: auto;
+  top: -20px;
+  right: -20px;
 }
 
-.flowerdetails {
-}
 .deal-section {
   max-width: 1140px;
   margin: 0 auto;
@@ -331,7 +333,6 @@
   }
   .banner-right {
     order: 1;
-    max-width: 80%;
   }
   .banner h2 {
     font-size: 2.5em;
@@ -342,7 +343,7 @@
 
   .product-bottom {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
   }
   .product-top h2 {
     font-size: 2em;
@@ -352,8 +353,16 @@
     padding: 0 10px;
   }
   .product-bottom div {
-    padding: 15px;
+    padding: 5px;
   }
+  .card {
+    width: 160px;
+  }
+  .card img {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .product-bottom div p:first-of-type {
     font-size: 1.1em;
   }
