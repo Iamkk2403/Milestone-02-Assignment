@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -230,7 +235,7 @@
   background-image: url(../assets/news-letter-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .joinsection input {
@@ -244,14 +249,17 @@
 }
 .footersection {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
   padding: 60px 20px;
   background-color: #f5f5f5;
   flex-wrap: wrap;
   gap: 40px;
 }
-
+.footer-logo p {
+  font-size: 22px;
+  color: #7c7c7c;
+}
 .footer-logo {
   max-width: 250px;
 }
@@ -264,6 +272,7 @@
 .footer-links {
   display: flex;
   gap: 60px;
+  color: #7c7c7c;
 }
 
 .link-column {
@@ -291,4 +300,162 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-bar ul li:not(:last-child) {
+    display: none;
+  }
+
+  .nav-bar ul {
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 0;
+  }
+  .nav-bar img {
+    height: 35px;
+  }
+  .cartcolor {
+    font-size: 0.9em;
+  }
+  .cartcolor i {
+    font-size: 1em;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 40px 15px;
+    text-align: center;
+  }
+  .banner-left {
+    order: 2;
+    margin-top: 30px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .banner-right {
+    order: 1;
+    max-width: 80%;
+  }
+  .banner h2 {
+    font-size: 2.5em;
+  }
+  .banner p {
+    font-size: 1em;
+  }
+
+  .product-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .product-top h2 {
+    font-size: 2em;
+  }
+  .product-top p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+  .product-bottom div {
+    padding: 15px;
+  }
+  .product-bottom div p:first-of-type {
+    font-size: 1.1em;
+  }
+  .product-bottom div p:last-of-type {
+    font-size: 1em;
+  }
+
+  .flowerdetails {
+    flex-direction: column;
+    padding: 30px 15px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .flowerdetails > div:last-child {
+    order: 2;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .image-container {
+    order: 1;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .flowerheader {
+    font-size: 2.5em;
+  }
+  .flowerlower {
+    font-size: 1em;
+    list-style-position: inside;
+    padding-left: 0;
+  }
+  .trusted-seal {
+    display: none;
+  }
+
+  .joinsection {
+    min-height: 400px;
+    padding: 50px 15px;
+  }
+  .joinsection h2 {
+    font-size: 2em;
+  }
+  .joinsection > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .joinsection input,
+  .joinsection .btncolor {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px 20px;
+  }
+
+  .footersection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 15px;
+    gap: 30px;
+  }
+  .footer-logo {
+    max-width: 100%;
+  }
+  .footer-logo img {
+    margin: 0 auto 15px auto;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .link-column {
+    align-items: center;
+  }
+
+  .deal-section {
+    padding: 30px 15px;
+    margin: 50px auto;
+  }
+  .deal-section h2 {
+    font-size: 2em;
+  }
+  .dealheadline p {
+    font-size: 0.9em;
+    padding: 0 5px;
+  }
+  .deal-card h3 {
+    font-size: 1.2rem;
+  }
+  .left-deals {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .deal-card.small {
+    min-height: 150px;
+  }
+  .deal-card.large {
+    min-height: 250px;
+  }
 }
